@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 # Copyright (C) 2008 Google Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,5 +22,5 @@ require 'gdata/auth'
 # This is for Unicode "support"
 if RUBY_VERSION < '1.9'
   require 'jcode'
+  $KCODE = 'UTF8'
 end
-$KCODE = 'UTF8'

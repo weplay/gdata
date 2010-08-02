@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 # Copyright (C) 2008 Google Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,9 +34,7 @@ end
 class UnicodeStringTest < Test::Unit::TestCase
   def test_jlength
     s = "Καλημέρα κόσμε!"
-    assert_equal(15, s.jlength) # Note the 'j'
-    assert_not_equal(15, s.length) # Normal, non unicode length
-    assert_equal(28, s.length) # Greek letters happen to take two-bytes
+    assert_equal(15, s.length) # in 1.9 - unicde characters are the same length
   end
 end
 
