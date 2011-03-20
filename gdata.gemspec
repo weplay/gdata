@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
-  s.name = 'gdata19'
-  s.version = '0.1.9.2'
+  s.name = 'gdata'
+  s.version = '1.1.2'
   s.summary = "Clone of Gdata gem designed to work for Ruby version 1.9"
   s.description = %{Clone of Gdata gem designed to work for Ruby version 1.9}
   s.files = Dir['lib/**/*.rb'] + Dir['test/**/*.rb'] - Dir['test/test_config.yml']
